@@ -1,0 +1,42 @@
+{
+    "name": "Formula",
+    "fields": [
+        {
+            "fieldName": "formulaName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "applications",
+            "otherEntityRelationshipName": "formula",
+            "relationshipName": "concreteApplication",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formulaStatus",
+            "otherEntityRelationshipName": "formula",
+            "relationshipName": "formulaStatus",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "developer",
+            "otherEntityRelationshipName": "formula",
+            "relationshipName": "owner",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192533",
+    "entityTableName": "formula",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

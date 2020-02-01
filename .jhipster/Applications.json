@@ -1,0 +1,20 @@
+{
+    "name": "Applications",
+    "fields": [
+        {
+            "fieldName": "applicationName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200201192534",
+    "entityTableName": "applications",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

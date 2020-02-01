@@ -1,0 +1,28 @@
+{
+    "name": "FormulaItems",
+    "fields": [
+        {
+            "fieldName": "countryName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formula",
+            "otherEntityRelationshipName": "formulaItems",
+            "relationshipName": "formula",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192535",
+    "entityTableName": "formula_items",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
