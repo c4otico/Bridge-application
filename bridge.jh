@@ -1,0 +1,66 @@
+
+entity Formula {
+	formulaName String
+}
+
+entity Applications {
+	applicationName String
+}
+
+entity FormulaItems {
+	countryName String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity FormulaReg {
+	moreDetails String,
+	evenMoreDetails String
+}
+
+entity FormulaStatus {
+	nameStatus String
+}
+
+entity ToMfg{
+	creationDate LocalDate
+}
+
+entity Submission{
+	creationDate LocalDate
+}
+
+entity SendToUser {
+	creationDate LocalDate
+}
+
+entity Developer {
+	name String
+    initials String maxlength(3)
+}
+
+relationship ManyToOne {
+    FormulaItems{formula} to Formula
+    FormulaReg{formula} to Formula
+    Formula{concreteApplication} to Applications
+    Formula{formulaStatus} to FormulaStatus
+    Formula{owner} to Developer
+    ToMfg{formulaId} to Formula
+    Submission{formula} to Formula
+    SendToUser{formula} to Formula
+    SendToUser{developer} to Developer
+    
+}
+
+// Set pagination options
+paginate Formula,Submission,ToMfg with infinite-scroll
+paginate FormulaItems,FormulaReg,Application,Developer with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
