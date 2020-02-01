@@ -1,0 +1,28 @@
+{
+    "name": "Submission",
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formula",
+            "otherEntityRelationshipName": "submission",
+            "relationshipName": "formula",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192539",
+    "entityTableName": "submission",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

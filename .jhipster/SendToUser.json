@@ -1,0 +1,35 @@
+{
+    "name": "SendToUser",
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formula",
+            "otherEntityRelationshipName": "sendToUser",
+            "relationshipName": "formula",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "developer",
+            "otherEntityRelationshipName": "sendToUser",
+            "relationshipName": "developer",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192540",
+    "entityTableName": "send_to_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

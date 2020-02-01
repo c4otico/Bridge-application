@@ -45,6 +45,15 @@ public class CacheConfiguration {
             createCache(cm, com.eurofragance.bridge.domain.User.class.getName());
             createCache(cm, com.eurofragance.bridge.domain.Authority.class.getName());
             createCache(cm, com.eurofragance.bridge.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.eurofragance.bridge.domain.Formula.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.Applications.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.FormulaItems.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.FormulaReg.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.FormulaStatus.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.ToMfg.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.Submission.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.SendToUser.class.getName());
+            createCache(cm, com.eurofragance.bridge.domain.Developer.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

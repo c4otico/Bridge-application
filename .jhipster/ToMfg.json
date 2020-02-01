@@ -1,0 +1,28 @@
+{
+    "name": "ToMfg",
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formula",
+            "otherEntityRelationshipName": "toMfg",
+            "relationshipName": "formulaId",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192538",
+    "entityTableName": "to_mfg",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

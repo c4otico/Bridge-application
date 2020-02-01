@@ -1,0 +1,20 @@
+{
+    "name": "FormulaStatus",
+    "fields": [
+        {
+            "fieldName": "nameStatus",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200201192537",
+    "entityTableName": "formula_status",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

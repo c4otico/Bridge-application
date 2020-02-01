@@ -1,0 +1,33 @@
+{
+    "name": "FormulaReg",
+    "fields": [
+        {
+            "fieldName": "moreDetails",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "evenMoreDetails",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "formula",
+            "otherEntityRelationshipName": "formulaReg",
+            "relationshipName": "formula",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200201192536",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "formula_reg",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
